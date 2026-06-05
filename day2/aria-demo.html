@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="charset" content="width=device-width" />
+    <title>Day 2 Task 3</title>
+    <style>
+      .skip-link {
+        opacity: 0;
+      }
+      .skip-link:focus {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>ARIA Hands on</h1>
+      <a href="#main-content" class="skip-link">Skip to main content</a>
+      <br />
+      <br />
+      <div role="search">
+        <label for="search">search</label>
+        <input type="text" id="search" />
+      </div>
+      <br />
+      <br />
+      <button aria-label="Close menu">x</button>
+      <br />
+      <br />
+      <button aria-expanded="false" aria-controls="menu-id">
+        Toggle button
+      </button>
+      <br />
+      <br />
+      <div role="alert" aria-live="polite">notification div</div>
+      <br />
+      <br />
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        aria-required="true"
+        aria-describedby="name_para"
+      />
+      <p id="name_para">
+        This is the place where you should type your full name.
+      </p>
+      <label for="email">Email</label>
+      <input
+        type="text"
+        id="email"
+        aria-required="true"
+        aria-describedby="email_para"
+      />
+      <p id="email_para">
+        This is the place you should write your email address
+      </p>
+      <label for="address">Address</label>
+      <input
+        type="text"
+        id="address"
+        aria-required="true"
+        aria-describedby="address_para"
+      />
+      <p id="address_para">
+        This is is the place you should write your address
+      </p>
+    </main>
+  </body>
+</html>
