@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <meta name="charset" content="width=device-width" />
+    <meta name="viewport" content="width=device-width" />
     <title>Day 2 Task 3</title>
     <style>
       .skip-link {
@@ -14,12 +14,10 @@
     </style>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <main>
       <h1>ARIA Hands on</h1>
-      <a href="#main-content" class="skip-link">Skip to main content</a>
-      <br />
-      <br />
-      <div role="search">
+      <div id="main-content" role="search">
         <label for="search">search</label>
         <input type="text" id="search" />
       </div>
@@ -31,6 +29,7 @@
       <button aria-expanded="false" aria-controls="menu-id">
         Toggle button
       </button>
+      <span id="menu-id"> menu </span>
       <br />
       <br />
       <div role="alert" aria-live="polite">notification div</div>
