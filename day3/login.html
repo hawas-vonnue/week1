@@ -9,17 +9,18 @@
     <main>
       <h1>Login Page</h1>
       <form>
-        <label for="email">Email:</label>
-        <input id="email" type="email" autocomplete="email" />
+        <label for="email">Email:*</label>
+        <input id="email" type="email" autocomplete="email" required />
         <br />
         <!--for accessibility-->
         <br />
-        <label for="password">Password:</label>
+        <label for="password">Password:*</label>
         <input
           id="password"
           type="password"
           autocomplete="current-password"
           aria-describedby="pass_para"
+          required
         />
         <button type="button" aria-pressed="false">show/hide</button>
         <p id="pass_para">Must be atleast 8 characters</p>
