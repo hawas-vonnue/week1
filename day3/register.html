@@ -25,8 +25,8 @@
 
         <fieldset>
           <legend>Account</legend>
-          <label for="username">User Name:</label>
-          <input id="username" type="text" required />
+          <label for="username">User Name(3 to 20 characters):</label>
+          <input id="username" type="text" pattern="[A-Za-z0-9_]{3,20}" required />
           <br />
           <br />
           <label for="password">Password:</label>
