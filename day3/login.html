@@ -8,25 +8,27 @@
   <body>
     <main>
       <h1>Login Page</h1>
-      <label for="email">Email:</label>
-      <input id="email" type="email" autocomplete="email" />
-      <br />
-      <!--for accessibility-->
-      <br />
-      <label for="password">Password:</label>
-      <input
-        id="password"
-        type="password"
-        autocomplete="current-password"
-        aria-describedby="pass_para"
-      />
-      <button type="button" aria-pressed="false">show/hide</button>
-      <p id="pass_para">Must be atleast 8 characters</p>
-      <input id="checkbox" type="checkbox" name="remember me" />
-      <label for="checkbox">remember me</label>
-      <br />
-      <br />
-      <button>submit</button>
+      <form>
+        <label for="email">Email:</label>
+        <input id="email" type="email" autocomplete="email" />
+        <br />
+        <!--for accessibility-->
+        <br />
+        <label for="password">Password:</label>
+        <input
+          id="password"
+          type="password"
+          autocomplete="current-password"
+          aria-describedby="pass_para"
+        />
+        <button type="button" aria-pressed="false">show/hide</button>
+        <p id="pass_para">Must be atleast 8 characters</p>
+        <input id="checkbox" type="checkbox" name="remember me" />
+        <label for="checkbox">remember me</label>
+        <br />
+        <br />
+        <button>submit</button>
+      </form>
     </main>
   </body>
 </html>
