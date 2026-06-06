@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Application Form</title>
+  </head>
+  <body>
+    <main>
+      <h1>Application Form</h1>
+      <ol>
+        <li aria-current="step">
+          <a href="#step1">step 1</a>
+          <br />
+          <br />
+        </li>
+        <li>
+          <a href="#step2">step 2</a>
+          <br />
+          <br />
+        </li>
+        <li><a href="#step3">step 3</a></li>
+      </ol>
+      <form>
+        <fieldset id="step1">
+          <legend>Step 1:Personal Information</legend>
+          <label for="name">Name:*</label>
+          <input type="text" id="name" required />
+          <br />
+          <br />
+          <label for="email">Email:*</label>
+          <input type="email" id="email" required />
+          <br />
+          <br />
+          <label for="phone">Phone:*</label>
+          <input type="tel" id="phone" />
+          <br />
+          <br />
+          <label for="linkedin">Linkedin url:*</label>
+          <input type="url" id="linkedin" required />
+        </fieldset>
+        <fieldset id="step2">
+          <legend>Step 2:Work Experience</legend>
+          <label for="role">Current role:*</label>
+          <input type="text" id="role" required />
+          <br />
+          <br />
+          <label for="company">Current company:*</label>
+          <input type="text" id="company" required />
+          <br />
+          <br />
+          <label for="experience">years of experience in number:*</label>
+          <input type="number" id="experience" required />
+          <br />
+          <br />
+          <label for="keyachievements">Enter your key achievements(max 500 characters):</label>
+          <br />
+          <textarea name="keyachievements" id="keyachievements"></textarea>
+        </fieldset>
+        <fieldset id="step3">
+          <legend>Step 3:Documents</legend>
+          <label for="cv">upload cv:*</label>
+          <input type="file" accept=".pdf,.docx" id="cv" required />
+          <br />
+          <br />
+          <label for="coverletter">Upload cover letter:*</label>
+          <input type="file" accept=".pdf,.docx" id="coverletter" required />
+          <br />
+          <br />
+          <label for="portfolio">portfolio url:*</label>
+          <input type="url" id="portfolio" required />
+          <br />
+        </fieldset>
+        <input type="submit" />
+      </form>
+    </main>
+  </body>
+</html>
