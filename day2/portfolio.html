@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Portfolio Page</title>
+    <style>
+      .skip-link {
+        opacity: 0;
+      }
+      .skip-link:focus {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#skip-link" class="skip-link">skip link</a>
+    <nav aria-current="page">
+      <a href="#hero">Hero section</a>
+      <a href="#about">about</a>
+      <a href="#project">Project</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <main id="skip-link">
+      <section id="hero">
+        <h1>Hawas backer</h1>
+        <p>
+          I've Earned the trust of over 250 clients and 40 brands,all of whom
+          are very satisfied with my service!
+        </p>
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <img
+          src="https://picsum.photos/id/1/200/300"
+          alt="Image of hawas backer working with laptop"
+        />
+        <br />
+        I am from Kozhikode. I completed by btech degree in computer science at
+        Govt college of Engineering kannur. I am passionate about coding and
+        building things. Currently working as a intern at Vonnue Innovations.
+      </section>
+      <article id="project">
+        <h2>Projects</h2>
+        <article>
+          <h3>iOS Meme App</h3>
+          <ul>
+            <li>
+              Developed an iOs application using swift and Objective-c that
+              allows users to easily create and share memes.
+            </li>
+            <li>
+              Integrated OpenCV library allowinf users to effortlessly apply
+              photo and filters and effects.
+            </li>
+            <li>
+              Incorporated persistent data storage to archive memes. Leveraged
+              caching for recently accessed memes.
+            </li>
+            <li>
+              Designed RESTful backed server enabling memes to be stored
+              persistently in an online database.
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h3>Autonomous RC car + Virtual Driving</h3>
+          <ul>
+            <li>
+              Designed and implemented PID speed control for an RC car by
+              constructing a Hall effect circuit to measure speed and a PWM
+              motor controller circuit to control speed
+            </li>
+            <li>
+              Added Autonomous driving by constructing an image processing
+              circuit and implementing a PID steering control.
+            </li>
+            <li>
+              Created a virtual driving experience by manufacturing a gimbal
+              mount and creating an iOS app that wirelessly displays and
+              operates the cameras FOV and direction. The app also remotely
+              controls speed and steering.
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h3>Home Automation:Temperature sensor with Android Interface</h3>
+          <ul>
+            <li>
+              Created an Android App that bit-banged BeagleBone's 12C module to
+              read temperature data off the DS1621 digital thermometer sesor and
+              visualized temperature changes.
+            </li>
+          </ul>
+        </article>
+      </article>
+      <section id="skills">
+        <h2>Skills</h2>
+        <dl>
+          <dt>Programming</dt>
+          <dd>
+            <ul>
+              <li>Java</li>
+              <li>C</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+            </ul>
+          </dd>
+          <dt>Languages</dt>
+          <dd>
+            <ul>
+              <li>English</li>
+              <li>Malayalam</li>
+              <li>Hindi</li>
+            </ul>
+          </dd>
+        </dl>
+      </section>
+      <section id="contact">
+        <h3>contact</h3>
+        <address>
+          <a href="mailto:hawas.backera@vonnue.com">Gmail</a>
+          <br />
+          <br>
+          <a href="https://github.com/hawas-vonnue">Github</a>
+        </address>
+      </section>
+    </main>
+  </body>
+</html>
