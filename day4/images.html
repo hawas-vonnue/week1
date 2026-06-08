@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Responsive Images</title>
+  </head>
+  <body>
+    <main>
+      <h1>Responsive Images</h1>
+      <h2>Images</h2>
+      <!--first hero image-->
+      <img
+        srcset="
+          https://picsum.photos/id/237/400   400w,
+          https://picsum.photos/id/237/800   800w,
+          https://picsum.photos/id/237/1200 1200w
+        "
+        sizes="(max-width:600px) 100vw, (max-width:1200px) 50vw,33vw"
+        loading="eager"
+        alt="Image of a Dog staring"
+      />
+      <br />
+      <img
+        srcset="
+          https://picsum.photos/id/236/400   400w,
+          https://picsum.photos/id/236/800   800w,
+          https://picsum.photos/id/236/1200 1200w
+        "
+        sizes="(max-width:600px) 100vw, (max-width:1200px) 50vw,33vw"
+        loading="lazy"
+        alt="A house in a hilly Area"
+      />
+      <img
+        srcset="
+          https://picsum.photos/id/235/400   400w,
+          https://picsum.photos/id/235/800   800w,
+          https://picsum.photos/id/235/1200 1200w
+        "
+        sizes="(max-width:600px) 100vw, (max-width:1200px) 50vw,33vw"
+        loading="lazy"
+        alt="An image of mountain"
+      />
+      <img
+        srcset="
+          https://picsum.photos/id/234/400   400w,
+          https://picsum.photos/id/234/800   800w,
+          https://picsum.photos/id/234/1200 1200w
+        "
+        sizes="(max-width:600px) 100vw, (max-width:1200px) 50vw,33vw"
+        loading="lazy"
+        alt="Image of Eiffel Tower"
+      />
+      <img
+        srcset="
+          https://picsum.photos/id/233/400   400w,
+          https://picsum.photos/id/233/800   800w,
+          https://picsum.photos/id/233/1200 1200w
+        "
+        sizes="(max-width:600px) 100vw, (max-width:1200px) 50vw,33vw"
+        loading="lazy"
+        alt="Image of railway lines"
+      />
+      <img
+        srcset="
+          https://picsum.photos/id/232/400   400w,
+          https://picsum.photos/id/232/800   800w,
+          https://picsum.photos/id/232/1200 1200w
+        "
+        sizes="(max-width:600px) 100vw, (max-width:1200px) 50vw,33vw"
+        loading="lazy"
+        alt="Image of Street lamps in snow"
+      />
+      <img
+        srcset="
+          https://picsum.photos/id/231/400   400w,
+          https://picsum.photos/id/231/800   800w,
+          https://picsum.photos/id/231/1200 1200w
+        "
+        sizes="(max-width:600px) 100vw, (max-width:1200px) 50vw,33vw"
+        loading="lazy"
+        alt="Image of Mountain"
+      />
+      <img
+        srcset="
+          https://picsum.photos/id/230/400   400w,
+          https://picsum.photos/id/230/800   800w,
+          https://picsum.photos/id/230/1200 1200w
+        "
+        sizes="(max-width:600px) 100vw, (max-width:1200px) 50vw,33vw"
+        loading="lazy"
+        alt="Image of Riverside"
+      />
+      <h2>Art direction</h2>
+      <picture>
+        <source media="(width < 800px)" srcset="https://picsum.photos/id/210/400" />
+        <source media="(width >= 800px)" srcset="https://picsum.photos/id/210/1200" />
+        <img src="https://picsum.photos/id/210" alt="A brick Wall" />
+      </picture>
+      <picture>
+        <source media="(width < 800px)" srcset="https://picsum.photos/id/200/400" />
+        <source media="(width >= 800px)" srcset="https://picsum.photos/id/200/1200" />
+        <img src="https://picsum.photos/id/210" alt="Picture of a Goat" />
+      </picture>
+    </main>
+  </body>
+</html>
