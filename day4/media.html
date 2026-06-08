@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Video And Audio</title>
+  </head>
+  <body>
+    <main>
+      <h1>Audio and video Demo</h1>
+      <h2>Video</h2>
+      <video
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        controls
+        width="640"
+        poster="https://picsum.photos/id/237/640/340"
+      >
+        <track default kind="captions" srclang="en" label="English" src="./captions.vtt" />
+        <p>
+          The video is not supported. Here is a
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4">Link to the video</a>Instead.
+        </p>
+      </video>
+      <details>
+        <summary>Video summary</summary>
+        This is a video of a butterfly flying and a large rabbit following it.
+      </details>
+      <h2>Audio</h2>
+      <audio controls>
+        <source
+          src="https://actions.google.com/sounds/v1/alarms/medium_bell_ringing_near.ogg"
+          type="audio/ogg"
+        />
+        <source
+          src="https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Sevish_-__nbsp_.mp3"
+          type="audio/mp3"
+        />
+        <!--fall back link-->
+        Download the
+        <a
+          href="https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Sevish_-__nbsp_.mp3"
+          >audio</a
+        >
+      </audio>
+      <details>
+        <summary>Audio summary</summary>
+        This is the audio of a bell ringing sound.
+      </details>
+    </main>
+  </body>
+</html>
