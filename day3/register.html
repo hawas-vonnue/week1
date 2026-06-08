@@ -25,16 +25,16 @@
 
         <fieldset>
           <legend>Account</legend>
-          <label for="username">User Name(3 to 20 characters):*</label>
-          <input id="username" type="text" pattern="[A-Za-z0-9_]{3,20}" required />
+          <label for="userName">User Name(3 to 20 characters):*</label>
+          <input id="userName" type="text" pattern="[A-Za-z0-9_]{3,20}" required />
           <br />
           <br />
           <label for="password">Password:*</label>
           <input id="password" type="password" minlength="8" required />
           <br />
           <br />
-          <label for="confirmpassword">Confirm Password:*</label>
-          <input id="confirmpassword" type="password" minlength="8" required />
+          <label for="confirmPassword">Confirm Password:*</label>
+          <input id="confirmPassword" type="password" minlength="8" required />
         </fieldset>
         <fieldset>
           <legend>Preferances</legend>
@@ -54,9 +54,9 @@
           <input id="color" type="color" />
           <br />
           <br />
-          <label for="jobtitle">Job title:</label>
-          <input id="jobtitle" type="text" list="joboptions" />
-          <datalist id="joboptions">
+          <label for="jobTitle">Job title:</label>
+          <input id="jobTitle" type="text" list="jobOptions" />
+          <datalist id="jobOptions">
             <option value="Marketing Coordinator"></option>
             <option value="Medical Assistant"></option>
             <option value="Web Designer"></option>
@@ -97,8 +97,8 @@
           <input id="time" type="time" />
           <br />
           <br />
-          <label for="datetime-local">prefered interview date and time:*</label>
-          <input id="datetime-local" type="datetime-local" required />
+          <label for="dateAndTime">prefered interview date and time:*</label>
+          <input id="dateAndTime" type="datetime-local" required />
           <br />
           <br />
           <label for="about">Write about yourself in less than 300characters:</label>
