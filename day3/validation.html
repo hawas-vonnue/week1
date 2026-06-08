@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>HTML Validation</title>
+  </head>
+  <body>
+    <main>
+      <h1>Native HTML validation</h1>
+      <form>
+        <label for="email">Email:*</label>
+        <input id="email" type="email" required />
+        <br />
+        <br />
+        <label for="password">Password(minimum length of 8 and atleast one number):*</label>
+        <input id="password" minlength="8" pattern=".*[0-9].*" type="password" required />
+        <br />
+        <br />
+        <label for="age">Age(must be between 18 and 99):*</label>
+        <input id="age" type="number" min="18" max="99" required />
+        <br />
+        <br />
+        <label for="websiteurl">website url:*</label>
+        <input type="url" id="websiteurl" required />
+        <br />
+        <br />
+        <label for="dob">Date of Birth:*</label>
+        <input id="dob" type="date" max="2026-06-06" required />
+        <br />
+        <br />
+        <input type="submit" />
+      </form>
+    </main>
+  </body>
+</html>
