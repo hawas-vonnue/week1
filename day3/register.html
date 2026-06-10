@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Full Registration Form</title>
+  </head>
+  <body>
+    <main>
+      <h1>Registration Form</h1>
+      <form>
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="name">Name:*</label>
+          <input id="name" type="text" maxlength="20" required />
+          <br />
+          <br />
+          <label for="email">Email:*</label>
+          <input id="email" type="email" required />
+          <br />
+          <br />
+          <label for="phone">phone:*</label>
+          <input id="phone" type="tel" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account</legend>
+          <label for="userName">User Name(3 to 20 characters):*</label>
+          <input id="userName" type="text" pattern="[A-Za-z0-9_]{3,20}" required />
+          <br />
+          <br />
+          <label for="password">Password:*</label>
+          <input id="password" type="password" minlength="8" required />
+          <br />
+          <br />
+          <label for="confirmPassword">Confirm Password:*</label>
+          <input id="confirmPassword" type="password" minlength="8" required />
+        </fieldset>
+        <fieldset>
+          <legend>Preferances</legend>
+          <fieldset>
+            <legend>Select you prefered notification setting</legend>
+            <input id="all" type="radio" name="notification" />
+            <label for="all">all notifications</label>
+            <input id="essential" type="radio" name="notification" />
+            <label for="essential">Essential notifications</label>
+          </fieldset>
+          <br />
+          <label for="range">skill level range:</label>
+          <input id="range" type="range" />
+          <br />
+          <br />
+          <label for="color">profile color picker:</label>
+          <input id="color" type="color" />
+          <br />
+          <br />
+          <label for="jobTitle">Job title:</label>
+          <input id="jobTitle" type="text" list="jobOptions" />
+          <datalist id="jobOptions">
+            <option value="Marketing Coordinator"></option>
+            <option value="Medical Assistant"></option>
+            <option value="Web Designer"></option>
+            <option value="Dog Trainer"></option>
+            <option value="Nursing Assistant"></option>
+            <option value="President of sales"></option>
+            <option value="Project Manager"></option>
+            <option value="Librarian"></option>
+          </datalist>
+        </fieldset>
+        <fieldset>
+          <legend>Other</legend>
+          <label for="file">Upload your resume:*</label>
+          <input id="file" type="file" required />
+          <br />
+          <br />
+          <label for="number">age:</label>
+          <input id="number" type="number" />
+          <br />
+          <br />
+          <label for="url">Github profile url:*</label>
+          <input id="url" type="url" required />
+          <br />
+          <br />
+          <label for="date">Date of Birth:*</label>
+          <input id="date" type="date" required />
+          <br />
+          <br />
+          <label for="month">Graduation month:*</label>
+          <input id="month" type="month" required />
+          <br />
+          <br />
+          <label for="week">Choose the week from you can start the work if selected:*</label>
+          <input id="week" type="week" required />
+          <br />
+          <br />
+          <label for="time">Prefered working day start time:</label>
+          <input id="time" type="time" />
+          <br />
+          <br />
+          <label for="dateAndTime">prefered interview date and time:*</label>
+          <input id="dateAndTime" type="datetime-local" required />
+          <br />
+          <br />
+          <label for="about">Write about yourself in less than 300characters:</label>
+          <input type="text" id="about" />
+          <br />
+          <br />
+          <fieldset>
+            <legend>Languages known</legend>
+            <input id="checkbox1" type="checkbox" />
+            <label for="checkbox1">English</label>
+            <input id="checkbox2" type="checkbox" />
+            <label for="checkbox2">Hindi</label>
+            <input id="checkbox3" type="checkbox" />
+            <label for="checkbox3">Others</label>
+          </fieldset>
+        </fieldset>
+        <br />
+        <input type="submit" />
+      </form>
+    </main>
+  </body>
+</html>
